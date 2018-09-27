@@ -1,0 +1,16 @@
+.image{
+    float:left;
+    margin: 20px 30px 20px 0;
+    position:relative;
+    text-align:center;
+}
+
+h4{
+    color:white;
+    font-weight: normal;
+    background-color:#4aaaa5;
+    padding: 10px 0px;
+    width: 100%;
+    position: absolute;
+    top: 60%;
+}
