@@ -7,20 +7,34 @@
     </head>
 
     <body>
-        <header class="clearfix">
-            <div class="headsec clearfix">
-                <h1 class="logo">Huiling Wu</h1>
-                <nav>
-                <a href="index.html">About</a>
-                <span>&nbsp&nbsp|&nbsp&nbsp</span> 
-                <a href="portfolio.html">Portfolio</a>
-                <span>&nbsp&nbsp|&nbsp&nbsp</span> 
-                <a href="contact.html">Contact</a>
-                </nav>
-            </div>
-        </header>
+        <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                      <div class="navbar-brand h1">Huiling Wu</div>
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                    
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                          <li class="nav-item">
+                            <a class="nav-link" href="index.html">About Me<span class="sr-only">(current)</span></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </nav>
+                  </div>
+                </div>
+              </div>
 
-        <section>
+        <!-- <section>
             <div class="main">
                 <h2>Contact</h2>
                 <form>
@@ -33,11 +47,43 @@
                     <button class="button" value="submit">Submit</button>
                 </form>
             </div>
-        </section>
+        </section> -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                        <h3>Contact</h3>
+                </div>
+                <div class="col-12">
+                    <form>
+                        <div class="form-group">
+                            <lable>Name</lable>
+                            <input type="text" name="fullname" class="form-control" placeholder="John Smith">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" name="email" class="form-control" placeholder="example@gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea class="form-control" name="message" rows="10" cols="90"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
 
-        <footer>
-            Copyright &copy;
+    
+        <footer class="fixed-bottom bg-secondary">
+            <div class="container text-center pt-1 pb-1">
+                <span class="text-white">Copyright &copy;</span>
+            </div>
         </footer>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
     </body>
 </html>
 
