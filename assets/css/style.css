@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 
 #brand {
     margin-left: calc(50% - 70px);
