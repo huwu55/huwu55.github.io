@@ -1,9 +1,4 @@
-/* *{
-    background-color: #faf6f0;
-} */
-.nav {
-    background-color: #faf6f0;
-}
+
 #brand {
     margin-left: calc(50% - 70px);
 }
@@ -13,15 +8,24 @@
 }
 
 #home{
-    padding-top: 120px; 
-    padding-bottom: 60px;
-    /* background-color: #faf6f0; */
+    height: 100vh;
     background-color: #405885;
+    
 }
 
 .intro{
     margin-top: 20px;
     color: white;
+    /* center everything */
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.intro img {
+    margin-bottom : 50px;
 }
 
 .intro p{
@@ -34,22 +38,34 @@
 }
 
 #about {
+    height: 100vh;
     background-color: rgb(224,116,136);
     /* background-color: #50aca2; */
     color: white;
-    padding: 60px;
+    padding: 100px;
 }
 
 #dev{
-    /* background-color: rgb(80,172,162); */
-    color:#4E4E4E;
-    margin: auto;
-    width: 75%;
+    /* margin: auto; */
+    width: 65%;
+
+    /* center everything */
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .circular{
     width: 350px;
     height:350px;
+}
+
+#projects {
+    background-color: #50aca2;
+    color: white;
+    padding: 60px;
 }
 
 
