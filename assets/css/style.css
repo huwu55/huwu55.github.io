@@ -41,7 +41,7 @@ html {
 }
 
 #about {
-    height: 100vh;
+    min-height: 100vh;
     background-color: rgb(224,116,136);
     /* background-color: #50aca2; */
     color: white;
@@ -103,6 +103,14 @@ html {
 @media screen and (max-width: 540px){
     #options {
         display: none;
+    }
+
+    .intro{
+        margin-top: 40px;
+        /* padding-bottom: 40px; */
+    }
+    #dev{
+        width:100%;
     }
     .cards{
         padding-right: 50px;
