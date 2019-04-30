@@ -45,7 +45,7 @@ html {
     background-color: rgb(224,116,136);
     /* background-color: #50aca2; */
     color: white;
-    padding: 100px;
+    /* padding: 100px; */
 }
 
 #dev{
@@ -68,9 +68,13 @@ html {
 #projects {
     background-color: #50aca2;
     color: white;
-    padding: 60px;
+    padding: 100px 150px;
+    min-height: 100vh;
 }
 
+/* span {
+    margin: 10px;
+} */
 
 #footer {
     background-color: #405885;
