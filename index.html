@@ -95,7 +95,7 @@
         <h4 style="margin-bottom: 60px;">Projects & Fun</h4>
         <div class="ui special cards">
             <div class="card">
-                <img class="ui medium image" src="assets/images/React-Mongo-MusicSongLyrics.png">
+                <img class="thumbnail ui medium image" src="assets/images/React-Mongo-MusicSongLyrics.png" alt="React Mongo MusicSongLyrics">
                 <div class="content">
                     <div class="header">React Mongo MusicSongLyrics</div>
                     <div class="description">
@@ -123,7 +123,7 @@
             </div>
 
             <div class="card">
-                <img class="ui medium image" src="assets/images/MusicSongLyrics.png">
+                    <img class="thumbnail ui medium image" src="assets/images/MusicSongLyrics.png" alt="MusicSongLyrics">
                 <div class="content">
                     <div class="header">MusicSongLyrics</div>
                     <div class="description">
@@ -147,7 +147,7 @@
             </div>
 
             <div class="card">
-                <img class="ui medium image" src="assets/images/googleBookSearch.png">
+                <img class="thumbnail ui medium image" src="assets/images/googleBookSearch.png" alt="Google Books Search">
                 <div class="content">
                     <div class="header">Google Books Search</div>
                     <div class="description">
@@ -172,7 +172,7 @@
             </div>
 
             <div class="card">
-                <img class="ui medium image" src="assets/images/mongoScraper.png">
+                <img class="thumbnail ui medium image" src="assets/images/mongoScraper.png" alt="New York Times Mongo Scraper">
                 <div class="content">
                     <div class="header">New York Times Mongo Scraper</div>
                     <div class="description">
@@ -200,7 +200,7 @@
             </div>
 
             <div class="card">
-                <img class="ui medium image" src="assets/images/clickygame.png">
+                <img class="thumbnail ui medium image" src="assets/images/clickygame.png" alt="React Clicky Game">
                 <div class="content">
                     <div class="header">React Clicky Game</div>
                     <div class="description">
@@ -222,7 +222,7 @@
             </div>
 
             <div class="card">
-                <img class="ui medium image" src="assets/images/bamazon.png">
+                <img class="thumbnail ui medium image" src="assets/images/bamazon.png" alt="Bamazon">
                 <div class="content">
                     <div class="header">Bamazon</div>
                     <div class="description">
@@ -241,6 +241,11 @@
         </div>
     </div>
 
+    <div class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
 
     <div id="footer" class="ui vertical masthead center aligned segment">
         <span class="text-white">&copy;2019 Huiling Wu</span> &nbsp;
@@ -251,8 +256,16 @@
   </body>
 
     <script>
-        $('.special.cards .image').dimmer({
-            on: 'hover'
+
+        $('.thumbnail').on("click", function(){
+            $('.modal').css("display", "block");
+            $('#modalImage').attr('src', this.src);
+            $('#modalImage').attr('alt', this.alt);
+            $('#caption').text(this.alt);
+        });
+
+        $('.close').on('click', function(){
+            $('.modal').css("display", "none");
         });
     </script>
 </html>
