@@ -2,13 +2,17 @@ html {
     scroll-behavior: smooth;
 }
 
+a {
+    color: black;
+}
+
 #brand {
     margin-left: calc(50% - 70px);
 }
 
-#brand a {
+/* #brand a {
     color: black;
-}
+} */
 
 #home{
     height: 100vh;
