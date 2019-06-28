@@ -1,6 +1,8 @@
 html {
     scroll-behavior: smooth;
     z-index: 0;
+    /* background: linear-gradient(white, blue); */
+    background-color: #405885;
 }
 
 a {
@@ -68,7 +70,7 @@ a {
 
 #about {
     min-height: 100vh;
-    background-color: rgb(224,116,136);
+    /* background-color: rgb(224,116,136); */
     /* background-color: #50aca2; */
     color: white;
     /* padding: 100px; */
@@ -94,15 +96,40 @@ a {
 }
 
 #projects {
-    background-color: #50aca2;
+    /* background-color: #50aca2; */
     color: white;
     padding: 100px 0px;
     min-height: 100vh;
+    background: linear-gradient(#50ac9c, #405885);
+    border:none;
+}
+
+#fullstack, #frontend, #backend{
+    margin:30px;
+    border-radius: 25px;
+    padding: 30px;
+}
+
+#fullstack{
+    /* background-color:#ac505a; */
+    /* text-align: center; */
+}
+
+#frontend{
+    /* background-color:#D6A6AB; */
+}
+
+#backend{
+    /* background-color:yellow; */
 }
 
 .cards{
-    padding-right: 150px;
-    padding-left: 150px;
+    display: none;
+    padding-top: 20px;
+    /* padding-right: 100px;
+    padding-left: 100px; */
+    /* -webkit-align-items: flex-start; */
+    /* align-items: flex-start; */
     /* z-index: 40; */
 }
 
@@ -183,14 +210,16 @@ a {
   }
 
 #footer {
-    background-color: #405885;
+    /* background-color: #405885; */
     color: white;
+    /* border-width: 3px;
+    border-color: #405885; */
 }
 
 #footer a:hover, #footer a {
     color: white;
 }
-
+/* 
 @media screen and (max-width: 980px){
     .cards{
         padding-right: 150px;
@@ -212,7 +241,6 @@ a {
 
     .intro{
         margin-top: 40px;
-        /* padding-bottom: 40px; */
     }
     #dev{
         width:100%;
@@ -221,4 +249,4 @@ a {
         padding-right: 50px;
         padding-left: 50px;
     }
-}
+} */
