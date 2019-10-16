@@ -1,0 +1,57 @@
+#shell{
+    display: grid;
+    grid-column: col-start 4 / span 6;
+    grid-row: 4;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    /* border-style: solid; */
+}
+
+#terminal{
+    background-color: black;
+    color: lightgray;
+    /* position: relative; */
+    height: 25em;
+    font-family: 'Inconsolata', monospace;
+    overflow: auto;
+}
+
+#location{
+    /* background-color: lightgray; */
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: .2em;
+    /* grid-column: col-start/span 12; */
+}
+
+#input{
+    display: flex;
+    /* position: fixed; */
+    /* bottom: 0;
+    left: 0; */
+}
+
+#terminal input{
+    border: none;
+    background-color: black;
+    color: white;
+    flex: 1;
+    border:none;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1em;
+    color: lightgray;
+}
+
+#terminal input:focus{
+    outline: none;
+    display: inline-block;
+}
+
+.prompt{
+    color: orange;
+}
+
+@media screen and (max-width:1100px){
+    #shell{
+        grid-column: col-start 2 / span 10;
+    }
+}
